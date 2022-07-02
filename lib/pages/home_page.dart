@@ -15,7 +15,30 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Consumer<BankService>(
       builder: (context, service, child) {
-        return Scaffold();
+        return Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.white,
+            leading: Icon(Icons.money),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.money),
+                tooltip: 'Hi!',
+                onPressed: () => {},
+              ),
+              IconButton(
+                icon: Icon(Icons.money),
+                tooltip: 'Wow',
+                onPressed: () => {},
+              ),
+              IconButton(
+                icon: Icon(Icons.money),
+                tooltip: 'Wow',
+                onPressed: () => {},
+              ),
+            ],
+          ),
+          body: ListTile(),
+        );
       },
     );
   }
